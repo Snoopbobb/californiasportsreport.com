@@ -57,7 +57,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-html {
+ html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
 }
@@ -1074,12 +1074,11 @@ p.site-description {
 .lead-story img {
 	width: auto;
   	height: 400px;
-  	float: left;
  	margin: 0 1rem 0 0;
 }
 
 .lead-story:nth-child(even) img {
-	float: right;
+	float: left;
 }
 
 .lead-story h2 {
@@ -1148,7 +1147,7 @@ p.site-description {
 		margin: 0 auto;
 	}
 	
-	.lead-story img {
+	.lead-story:nth-child(even) img {
 		float: none;
 	}
 }
@@ -1157,7 +1156,7 @@ p.site-description {
 	.site-title {
 		font-size: 45px;
 	}
-	
+
 	.lead-story {
 		overflow: hidden;
 		max-width: 100%;
